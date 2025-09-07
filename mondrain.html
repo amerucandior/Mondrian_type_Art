@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrain2.0</title>
+    <style>
+        body {
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .grid-container {
+            width: 460px;
+            background: #000;
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 20px;
+            grid-auto-rows: 80px;
+            gap: 10px;
+            background: #000;
+            padding: 10px;
+        }
+          .block {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            min-height: 1px;
+        }
+        .white {
+            background: #F0F1EC;
+        }
+        .red {
+            background: #e72f24;
+        }
+        .blue {
+            background: #004592;
+        }
+        .yellow {
+            background: #F9D01E;
+        }
+        .a  {
+            grid-column: 1 ; grid-row: 1 / span 2 ;
+        }
+        .b { 
+            grid-column: 1 ; grid-row: 3 / span 2 ;
+        }
+        .c {
+            grid-column: 2 / span 3; grid-row: 1 / span 4 
+        }
+        .d { 
+            grid-column : 1 ; grid-row: 5;
+        }
+        .e {
+            grid-column: 4; grid-row: 5;
+        }
+        .f {
+            grid-column: 2 / span 2; grid-row: 5;
+        }
+        .g {
+            grid-column: 4; grid-row: 5
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid">
+        <div class="block a white"></div>
+        <div class="block b white"></div>
+        <div class="block c red"></div>
+        <div class="block d blue"></div>
+        <div class="block e white"></div>
+        <div class="block f white"></div>
+        <div class="block g yellow"></div>
+    </div>
+  </body>
+</html>
